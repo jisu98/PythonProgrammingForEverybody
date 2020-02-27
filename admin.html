@@ -1,0 +1,9 @@
+<ul>
+  {% for m in history %}
+  <li>{{m['name']}}:{{m['mesg']}} ({{m['time']}}) ({{m['ip']}})</li>
+  {% end %}
+</ul>
+<form action='/admin' method='post'>
+  Action: <input name='cmd'>
+  <input type='submit'>
+</form>

@@ -1,0 +1,10 @@
+<form action='/talk' method='post'>
+  <input name='name' readonly value='{{name}}'>:<input name='mesg'>
+  <input type='submit'> <br>
+  <input name='id' readonly value='{{name}}{{id_time}}'>
+</form>
+<form action='/logout' method='post' name = '{{name}}'>
+	<input name='id' readonly value='{{name}}{{id_time}}'>
+	<input type='submit' value='Logout'>
+	<input name='name'type='hidden' value='{{name}}'>
+</form>
